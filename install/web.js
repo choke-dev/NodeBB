@@ -57,7 +57,7 @@ const totalTime = 1000 * 60 * 3;
 const viewsDir = path.join(paths.baseDir, 'build/public/templates');
 
 web.install = async function (port) {
-	port = port || 4567;
+	port = port || 80;
 	winston.info(`Launching web installer on port ${port}`);
 
 	app.use(express.static('public', {}));
