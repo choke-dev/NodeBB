@@ -36,6 +36,6 @@ ENV NODE_ENV=production \
     daemon=false \
     silent=false
 
-EXPOSE 4567
+EXPOSE 80
 
 CMD test -n "${SETUP}" && ./nodebb setup || node ./nodebb build; node ./nodebb start
